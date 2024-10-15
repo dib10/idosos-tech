@@ -26,7 +26,7 @@ Repositório dedicado à demanda da professora Márcia ao Projeto de Extensão d
 - [gvieira1](https://www.github.com/gvieira1)
 - [HenriqueCamelo](https://www.github.com/HenriqueCamelo)
 - [IsaUrdiali](https://www.github.com/IsaUrdiali)
-- [PedroLauton](https://www.github.com/PedroLauton)
+- [PedroLauton](https://www.github.com/PedroLauton) <br><br>
 ![Logo Idosos Tech](https://i.imgur.com/7m1pFNo.png)
 
 ## Etiquetas
