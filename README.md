@@ -78,7 +78,7 @@ Javascript, HTML, CSS...
 
 ## Stack utilizada
 
-**Front-end:** React, Redux, TailwindCSS
+**Front-end:** Html, Css, Bootstrap
 
-**Back-end:** Node, Express
+**Back-end:** PHP, Javascript
 
