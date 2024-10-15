@@ -19,7 +19,7 @@ Este projeto, denominado Idosos Tech, visa atender à necessidade da professora 
 | Cor 4             | #01aa46                                                   | ![#01aa46](https://via.placeholder.com/30/01aa46/000000?text=+) #01aa46 |
 | Cor 5             | #000000                                                   | ![#000000](https://via.placeholder.com/30/000000/ffffff?text=+) #000000 |
 | Cor 6             | #ffffff                                                   | ![#ffffff](https://via.placeholder.com/30/ffffff/000000?text=+) #ffffff |
-## Autores
+## Autores 👷‍♂
 
 - [dib10](https://www.github.com/dib10)
 - [GabihSantana](https://www.github.com/GabihSantana)
