@@ -24,7 +24,9 @@
 - [gvieira1](https://www.github.com/gvieira1)
 - [HenriqueCamelo](https://www.github.com/HenriqueCamelo)
 - [IsaUrdiali](https://www.github.com/IsaUrdiali)
-- [PedroLauton](https://www.github.com/PedroLauton)<br><br>
+- [PedroLauton](https://www.github.com/PedroLauton)
+- [PedroHDBD](https://github.com/PedroHDBD)  <!-- Novo autor adicionado -->
+
 ## Stack Utilizada 🛠
 
 | Tipo       | Ferramentas                          |
