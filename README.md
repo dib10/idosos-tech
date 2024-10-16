@@ -1,9 +1,6 @@
-
-# Idosos Tech 👵💻
-
-Repositório dedicado à demanda da professora Márcia ao Projeto de Extensão do curso de Análise e Desenvolvimento de Sistemas no Instituto Federal de São Paulo, Campus Guarulhos.
-
-Este projeto, denominado Idosos Tech, visa atender à necessidade da professora Márcia, que mantém uma plataforma de ensino de informática voltada para o público idoso, promovendo inclusão digital e aprendizado acessível.
+# Idosos Tech 👵💻 
+**Idosos Tech** é um projeto voltado para inclusão digital, desenvolvido em colaboração com a professora Márcia no Projeto de Extensão **Simplifica**. A iniciativa promove o aprendizado de informática para idosos, ajudando a reduzir a exclusão digital e proporcionando um ambiente de ensino acessível e inclusivo.<br><br>
+[![Simplifica Badge](https://imgur.com/pZcw9GP.png)](https://simplifica.gru.br/simplifica/#top)
 ## Referência
 
  - [Tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)
@@ -28,11 +25,12 @@ Este projeto, denominado Idosos Tech, visa atender à necessidade da professora 
 - [HenriqueCamelo](https://www.github.com/HenriqueCamelo)
 - [IsaUrdiali](https://www.github.com/IsaUrdiali)
 - [PedroLauton](https://www.github.com/PedroLauton)<br><br>
-![Logo Idosos Tech](https://i.imgur.com/7m1pFNo.png)
+## Stack Utilizada 🛠
 
-## Stack utilizada
+| Tipo       | Ferramentas                          |
+| ---------- | ------------------------------------ |
+| **Front-end** | HTML, CSS, Bootstrap               |
+| **Back-end**  | PHP, Javascript                    |
 
-**Front-end:** HTML, CSS, Bootstrap
-
-**Back-end:** PHP, Javascript
-
+## Origem 🏫
+**Este projeto faz parte do [Simplifica](https://simplifica.gru.br/simplifica/#top), uma extensão do curso de Análise e Desenvolvimento de Sistemas do IFSP-GRU, criada em 2023.**
