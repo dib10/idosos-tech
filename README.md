@@ -15,9 +15,16 @@
 | Cor 2             | #002B36                                                   | ![#002B36](https://via.placeholder.com/30/0a1e6e/ffffff?text=+) #002B36 |
 | Cor 3             | #FDF6E3                                                   | ![#FDF6E3](https://via.placeholder.com/30/dda345/000000?text=+) #FDF6E3 |
 | Cor 4             | #ffffff                                                   | ![#ffffff](https://via.placeholder.com/30/ffffff/000000?text=+) #ffffff |
+
+## Documentação de Fontes
+
+| Fonte            |                                                                                         
+| ---------------- | 
+| Raleway          | 
+| Lucida Sans      |
 ## Autores
 
-- [Davi0000000000000]([https://www.github.com/dib10](https://github.com/Davi0000000000000))
+- [Davi0000000000000](https://github.com/Davi0000000000000)
 - [dib10](https://www.github.com/dib10)
 - [GabihSantana](https://www.github.com/GabihSantana)
 - [gvieira1](https://www.github.com/gvieira1)
