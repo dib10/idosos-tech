@@ -11,21 +11,20 @@
 
 | Cor               | Hexadecimal                                                | Exemplo                                                     |
 | ----------------- | ---------------------------------------------------------- | ----------------------------------------------------------- |
-| Cor 1             | #f9efc1                                                   | ![#f9efc1](https://via.placeholder.com/30/f9efc1/000000?text=+) #f9efc1 |
-| Cor 2             | #0a1e6e                                                   | ![#0a1e6e](https://via.placeholder.com/30/0a1e6e/ffffff?text=+) #0a1e6e |
-| Cor 3             | #dda345                                                   | ![#dda345](https://via.placeholder.com/30/dda345/000000?text=+) #dda345 |
-| Cor 4             | #01aa46                                                   | ![#01aa46](https://via.placeholder.com/30/01aa46/000000?text=+) #01aa46 |
-| Cor 5             | #000000                                                   | ![#000000](https://via.placeholder.com/30/000000/ffffff?text=+) #000000 |
-| Cor 6             | #ffffff                                                   | ![#ffffff](https://via.placeholder.com/30/ffffff/000000?text=+) #ffffff |
+| Cor 1             | #0A1E6E                                                   | ![#0A1E6E](https://via.placeholder.com/30/f9efc1/000000?text=+) #0A1E6E |
+| Cor 2             | #002B36                                                   | ![#002B36](https://via.placeholder.com/30/0a1e6e/ffffff?text=+) #002B36 |
+| Cor 3             | #FDF6E3                                                   | ![#FDF6E3](https://via.placeholder.com/30/dda345/000000?text=+) #FDF6E3 |
+| Cor 4             | #ffffff                                                   | ![#ffffff](https://via.placeholder.com/30/ffffff/000000?text=+) #ffffff |
 ## Autores
 
+- [Davi0000000000000]([https://www.github.com/dib10](https://github.com/Davi0000000000000))
 - [dib10](https://www.github.com/dib10)
 - [GabihSantana](https://www.github.com/GabihSantana)
 - [gvieira1](https://www.github.com/gvieira1)
 - [HenriqueCamelo](https://www.github.com/HenriqueCamelo)
 - [IsaUrdiali](https://www.github.com/IsaUrdiali)
 - [PedroLauton](https://www.github.com/PedroLauton)
-- [PedroHDBD](https://github.com/PedroHDBD)  <!-- Novo autor adicionado -->
+- [PedroHDBD](https://github.com/PedroHDBD)  
 
 ## Stack Utilizada 🛠
 
