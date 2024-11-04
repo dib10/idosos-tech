@@ -11,9 +11,9 @@
 
 | Cor               | Hexadecimal                                                | Exemplo                                                     |
 | ----------------- | ---------------------------------------------------------- | ----------------------------------------------------------- |
-| Cor 1             | #0A1E6E                                                   | ![#0A1E6E](https://via.placeholder.com/30/f9efc1/000000?text=+) #0A1E6E |
-| Cor 2             | #002B36                                                   | ![#002B36](https://via.placeholder.com/30/0a1e6e/ffffff?text=+) #002B36 |
-| Cor 3             | #FDF6E3                                                   | ![#FDF6E3](https://via.placeholder.com/30/dda345/000000?text=+) #FDF6E3 |
+| Cor 1             | #0A1E6E                                                   | ![#0A1E6E](https://via.placeholder.com/30/#0A1E6E/000000?text=+) #0A1E6E |
+| Cor 2             | #002B36                                                   | ![#002B36](https://via.placeholder.com/30/002B36/ffffff?text=+) #002B36 |
+| Cor 3             | #FDF6E3                                                   | ![#FDF6E3](https://via.placeholder.com/30/#FDF6E3/000000?text=+) #FDF6E3 |
 | Cor 4             | #ffffff                                                   | ![#ffffff](https://via.placeholder.com/30/ffffff/000000?text=+) #ffffff |
 
 ## Documentação de Fontes
