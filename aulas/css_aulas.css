@@ -1,19 +1,22 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede rolagem lateral */ 
     font-family: 'Raleway', sans-serif;
     background-color: #FDF6E3;
 }
 
-.content, .contacts {
+.content, .contato {
     text-align: center;
     margin: 30px 0;
     color: #333;
 }
 
-.content h1, .contacts h3 {
+.content h1, .contatos h3 {
     font-weight: 700; /* Peso maior para o título */
 }
 
-.content p, .contacts p {
+.content p, .contatos p {
     font-weight: 400;
     margin-top: 10px;
 }
@@ -80,20 +83,20 @@ footer {
     background-color: #002B36; /* Cor de fundo desejada */
 }
 
-.contact-title {
+.contato-title {
     color: #002B36; /* Cor para o título antes dos dois pontos */
     
 }
 
-.contact-info {
+.contato-info {
     color: rgb(0, 0, 0); /* Cor para a informação após os dois pontos */
 }
 
-.contacts h3 {
+.contato h3 {
     font-size: 2em; /* Aumenta o tamanho do título */
 }
 
-.contacts p {
+.contatos p {
     font-size: 1.2em; /* Aumenta o tamanho do texto dos parágrafos */
 }
 
@@ -124,4 +127,5 @@ footer {
         width: 60px; /* Tamanho menor para dispositivos móveis */
     }
 }
+
 
