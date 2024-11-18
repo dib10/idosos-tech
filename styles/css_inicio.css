@@ -1,0 +1,83 @@
+body {
+    padding-top: 70px;
+    margin: 0;
+}
+
+.navbar-brand img{
+    padding: 0;
+    margin: 0;
+    width: 115px;
+}
+
+.nav-link{
+    padding: 5px;
+    margin: 5px 12px 5px 20px;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover{
+    transform: scale(1.4);
+    border: 2px solid #FDF6E3;
+    box-shadow: 0px 0px 0px #FDF6E3,
+    0 0 25px #FDF6E3;
+    transition: .70s ease-out;
+}
+
+.nav-link:focus, .nav-link:active {
+    transform: scale(1.3);
+    border: 1px solid #FDF6E3;
+    box-shadow: 0px 0px 0px #FDF6E3, 0 0 25px #FDF6E3;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #0A1E6E;
+}
+
+.introduction p{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.content .arrow_content{
+    font-weight: 600;
+    color: #0A1E6E;
+}
+
+.content hr{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+#materiais, #contatos{
+    padding: 30px;
+}
+
+.whatsapp-button:focus, .whatsapp-button:hover{
+    transform: scale(1.2);
+    border: 2px solid #FDF6E3;
+    box-shadow: 0px 0px 0px #002B36, 0 0 25px #002B36;
+}
+
+.contatos a{
+    color: #002B36;
+}
+
+.contatos p{
+    color: #0A1E6E;
+    font-weight: bolder;
+}
+
+.contatos span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}

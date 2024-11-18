@@ -128,4 +128,31 @@ footer {
     }
 }
 
+#linha {
+    background-color: #D5850BB5;
+    display: flex;
+    padding: 1mm;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
 
+#semestres {
+    display: flex;
+    justify-content: center;
+}
+
+#semestres h2 {
+    color: #0A1E6E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text1{
+    color: #002B36;
+}
