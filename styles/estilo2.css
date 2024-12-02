@@ -9,6 +9,7 @@ html, body {
     background-color: #FDF6E3;
 }
 
+
 body {
     padding-top: 70px;
 }
@@ -18,7 +19,11 @@ body {
 /* ============================ */
 .custom-navbar {
     background-color: #002B36;
+    margin: 0;
+    padding: 0;
 }
+
+
 
 .navbar-brand img {
     padding: 0;
@@ -42,18 +47,11 @@ body {
     letter-spacing: 1px;
 }
 
-.nav-link:hover {
-    transform: scale(1.4);
-    border: 2px solid #FDF6E3;
-    box-shadow: 0px 0px 0px #FDF6E3, 0 0 25px #FDF6E3;
-    transition: 0.7s ease-out;
-}
 
-.nav-link:focus, .nav-link:active {
-    transform: scale(1.3);
-    border: 1px solid #FDF6E3;
-    box-shadow: 0px 0px 0px #FDF6E3, 0 0 25px #FDF6E3;
-    letter-spacing: 1px;
+
+.nav-link:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
 }
 
 /* ============================ */
@@ -64,6 +62,9 @@ body {
     margin: 30px 0;
     color: #333;
 }
+
+
+
 
 .content h1 {
     font-size: 70px;
@@ -90,7 +91,7 @@ body {
 
 @media (max-width: 768px) {
     .introduction p {
-        max-width: 90%;
+        width: 120%;
         margin: 0 auto;
         text-align: justify;
         line-height: 1.6;
@@ -100,7 +101,7 @@ body {
     }
 
     .introduction h1 {
-        font-size: 1.8rem;
+        font-size: 4.4rem;
         margin-bottom: 15px;
         text-align: center;
     }
@@ -134,19 +135,7 @@ body {
 /* ============================ */
 /* CARDS                        */
 /* ============================ */
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #002B36;
-    color: #fff;
-}
+
 
 .card:hover {
     transform: scale(1.05);
@@ -177,6 +166,7 @@ body {
     z-index: 1000;
     padding: 10px;
 }
+
 
 .whatsapp-button img {
     width: 40px;
@@ -258,7 +248,7 @@ footer {
 }
 
 .introduction {
-    max-width: 60%;
+    max-width: 99%;
     margin: 0 auto;
     text-align: center;
     font-weight: bold;
@@ -271,3 +261,167 @@ footer {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================ */
+/* ADICIONADOS 30/11 - BACKEND */
+/* ============================ */
+
+.card {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    height: 300px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #002B36;
+    color: #fff;
+
+}
+
+.card-body {
+    color: #fff; 
+}
+
+.contato-title {
+    color: #002B36;
+    
+}
+
+.contato-info {
+    color: rgb(0, 0, 0);
+}
+
+.contato h3 {
+    font-size: 2em; 
+}
+
+.text1{
+    color: #002B36;
+}
+
+.titulo_cabecalho {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold;
+    z-index: 10;
+}
+
+body {
+    padding-top: 0;
+}
+
+
+header img, .adm-logo {
+    width: 50px;
+    height: auto;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+.adm-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button, .adm-button {
+    background-color: #05386B; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adm-button {
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 30px;
+    margin: 20px; 
+    display: inline-flex;
+}
+
+button:hover, .adm-button:hover {
+    transform: scale(1.05);
+    background-color: #012346; 
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
