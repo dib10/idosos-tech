@@ -22,14 +22,16 @@
     $stmt->bind_param("i", $ano);
     $stmt->execute();
     $result = $stmt->get_result();
-
+    if (!$result) {
+        die("Erro ao obter resultado: " . $conn->error);
+    }
     $primeiroSemestre = [];
     $segundoSemestre = [];
 
     while ($row = $result->fetch_assoc()) {
-        if ($row['semestre'] == '1Âº semestre') {
+        if ($row['semestre'] == '1º semestre') {
             $primeiroSemestre[] = $row;
-        } else if ($row['semestre'] == '2Âº semestre') {
+        } else if ($row['semestre'] == '2º semestre') {
             $segundoSemestre[] = $row;
         }
     }
