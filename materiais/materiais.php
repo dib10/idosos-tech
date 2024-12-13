@@ -10,14 +10,17 @@
         die("Erro de conexão: " . $conn->connect_error);
     }
 
-    $ano = intval($_GET['ano']);
-
-    if(!$ano){
+    if (!isset($_GET['ano']) || !is_numeric($_GET['ano'])) {
         header("Location: ../index.php");
-        exit()        
+        exit();
     }
 
+    $ano = intval($_GET['ano']);
+
     $stmt = $conn->prepare("CALL GetSemestre(?)");
+    if (!$stmt) {
+        die("Erro na preparação da consulta: " . $conn->error);
+    }
     $stmt->bind_param("i", $ano);
     $stmt->execute();
     $result = $stmt->get_result();
