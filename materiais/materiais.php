@@ -10,7 +10,7 @@
         die("Erro de conexão: " . $conn->connect_error);
     }
 
-    $ano = $_GET['ano'];
+    $ano = intval($_GET['ano']);
 
     if(!$ano){
         header("Location: ../index.php");
