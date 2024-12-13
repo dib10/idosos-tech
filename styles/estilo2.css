@@ -14,6 +14,20 @@ body {
     padding-top: 70px;
 }
 
+.btn-hover {
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-hover:hover {
+    background-color: #002B36; 
+    color: #fff;
+}
+
+.btn-hover:hover {
+    transform: scale(1.1); /* Aumenta o tamanho para 110% */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
 /* ============================ */
 /* NAVBAR                       */
 /* ============================ */
@@ -151,20 +165,6 @@ body {
 
 .card-body {
     padding: 15px;
-}
-
-.btn-hover {
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
-
-.btn-hover:hover {
-    background-color: #002B36; 
-    color: #fff;
-}
-
-.btn-hover:hover {
-    transform: scale(1.1); /* Aumenta o tamanho para 110% */
-    transition: transform 0.3s ease; /* Transição suave */
 }
 
 /* ============================ */
