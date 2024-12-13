@@ -29,7 +29,7 @@
                     <a class="nav-link text-white" href="../index.php" title="Ir para a página inicial">Início</a> 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="materiais.html" title="Ir para a página de materiais">Materiais</a> 
+                    <a class="nav-link text-white" href="materiais.php" title="Ir para a página de materiais">Materiais</a> 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#contatos" title="Ir para a seção de contatos">Contatos</a> 
@@ -66,7 +66,7 @@
     <div class="card w-25">
         <img src="../img/drive.webp" class="card-img-top" alt="Ícone do Google Drive">
         <div class="card-body">
-            <a href="../aulas/aulas.html" class="text-decoration-none">
+            <a href="../aulas/aulas.php" class="text-decoration-none">
                 <h2 class="text-white">Aula Google Drive</h2>
             </a>
         </div>
@@ -84,7 +84,7 @@
     <div class="card w-25">
         <img src="../img/foto1.webp" class="card-img-top" alt="Imagem de um quebra-cabeça">
         <div class="card-body">
-            <a href="../material.html" class="text-decoration-none">
+            <a href="../material.php" class="text-decoration-none">
                 <h2 class="text-white">Lorem ipsum dolor</h2>
             </a>
         </div>
