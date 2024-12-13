@@ -41,7 +41,6 @@ $conn->close();
 </head>
 <body>
     <div class="container mt-4">
-        <h1>Editar Material</h1>
         <form method="POST" action="editarMaterialProcedure.php" enctype="multipart/form-data">
             <input type="hidden" name="materiaid" value="<?= $material['materiaid'] ?>">
             <div class="mb-3">
