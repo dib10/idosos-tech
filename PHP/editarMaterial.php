@@ -50,11 +50,11 @@ $conn->close();
             </div>
             <div class="mb-3">
                 <label for="ano" class="form-label">Ano:</label>
-                <select id="ano" name="ano" class="form-select" value="<?= $material['ano'] ?>" required>
+                <select id="ano" name="ano" class="form-select" required>
                     <option value="">Selecione o ano</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
+                    <option value="2024" <?= $material['ano'] == 2024 ? 'selected' : '' ?>>2024</option>
+                    <option value="2023" <?= $material['ano'] == 2023 ? 'selected' : '' ?>>2023</option>
+                    <option value="2022" <?= $material['ano'] == 2022 ? 'selected' : '' ?>>2022</option>
                 </select>
             </div>
             <div class="mb-3">
