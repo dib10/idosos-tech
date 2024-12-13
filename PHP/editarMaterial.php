@@ -37,6 +37,7 @@ $conn->close();
     <title>Editar Material</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/estilo2.css">
+    <?php require_once 'cabecalho.php' ?>
 </head>
 <body>
     <div class="container mt-4">
@@ -49,7 +50,12 @@ $conn->close();
             </div>
             <div class="mb-3">
                 <label for="ano" class="form-label">Ano:</label>
-                <input type="date" id="ano" name="ano" class="form-control" value="<?= $material['ano'] ?>" required>
+                <select id="ano" name="ano" class="form-select" value="<?= $material['ano'] ?>" required>
+                    <option value="">Selecione o ano</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="semestre" class="form-label">Semestre:</label>
