@@ -22,7 +22,10 @@
     $stmt->bind_param("i", $ano);
     $stmt->execute();
     $result = $stmt->get_result();
-    
+
+    $row = $result->fetch_assoc();
+    echo "Semestre: " . $row['semestre'];    $primeiroSemestre = [];
+
     $primeiroSemestre = [];
     $segundoSemestre = [];
 
