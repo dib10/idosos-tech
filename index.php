@@ -83,7 +83,7 @@
     <div class="content text-center">
         <h1 id="titulo-materiais">Materiais</h1>
         <?php while ($row = $result->fetch_assoc()) { ?>
-            <a class="btn btn-primary mb-2" href="PHP/listarMaterial.php?ano=<?=($row['ano']) ?>">
+            <a class="btn btn-primary ms-2" href="PHP/listarMaterial.php?ano=<?=($row['ano']) ?>">
                 <h3>Materiais <?=($row['ano']) ?></h3>
                 <p>Clique aqui!</p>
             </a>
