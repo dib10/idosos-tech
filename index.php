@@ -45,10 +45,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html" title="Ir para tela inicial">Início</a>                 
+                    <a class="nav-link text-white" href="index.php" title="Ir para tela inicial">Início</a>                 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="materiais/materiais.html" title="Acessar Materiais">Materiais</a>                 
+                    <a class="nav-link text-white" href="materiais/materiais.php" title="Acessar Materiais">Materiais</a>                 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#contatos" title="Ir para a seção de contatos">Contatos</a> 
