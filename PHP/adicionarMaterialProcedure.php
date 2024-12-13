@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $stmt = $conn->prepare("CALL inserir_materiais(?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("isssssss", $user_modifiedby, $titulo, $ano, $semestre, $arquivo, $linkTarefa, $linkJogo, $linkVideo);
+    $stmt->bind_param("isisssss", $user_modifiedby, $titulo, $ano, $semestre, $arquivo, $linkTarefa, $linkJogo, $linkVideo);
     
     $user_modifiedby = 1;
 
