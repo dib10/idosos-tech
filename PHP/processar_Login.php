@@ -1,8 +1,9 @@
 <?php
-$host = "localhost";
-$user = "root"; 
-$password = ""; 
-$dbname = "idosos_tech"; 
+
+$host = "localhost"; // Geralmente "localhost" em cPanel
+$user = "simplifica_idosos-tech"; // Usuário do banco de dados
+$password = "simplificaidosos"; // Senha do banco de dados
+$dbname = "simplifica_idosos-tech"; // Nome do banco de dados
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
