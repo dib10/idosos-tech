@@ -18,9 +18,7 @@
     $ano = intval($_GET['ano']);
 
     $stmt = $conn->prepare("CALL GetSemestre(?)");
-    if (!$stmt) {
-        die("Erro na preparação da consulta: " . $conn->error);
-    }
+    
     $stmt->bind_param("i", $ano);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -29,12 +27,13 @@
     $segundoSemestre = [];
 
     while ($row = $result->fetch_assoc()) {
-        if ($row['semestre'] == '1º semestre') {
+        if ($row['semestre'] == '1Âº semestre') {
             $primeiroSemestre[] = $row;
-        } else if ($row['semestre'] == '2º semestre') {
+        } else if ($row['semestre'] == '2Âº semestre') {
             $segundoSemestre[] = $row;
         }
     }
+
     $stmt->close();
     $conn->close();
 ?>
