@@ -153,6 +153,15 @@ body {
     padding: 15px;
 }
 
+.btn-hover {
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-hover:hover {
+    background-color: #002B36; 
+    color: #fff;
+}
+
 /* ============================ */
 /* BOTÃO WHATSAPP               */
 /* ============================ */
