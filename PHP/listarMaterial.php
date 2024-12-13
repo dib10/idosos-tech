@@ -72,10 +72,10 @@
                 if ($ano && $pesquisa) {
                     $stmt = $conn->prepare("CALL listar_materiais_ano_nome_adm(?,?)");
                     $pesquisa = "%$pesquisa%";
-                    $stmt->bind_param("ss", $pesquisa, $ano);
+                    $stmt->bind_param("si", $pesquisa, $ano);
                 } elseif ($ano) {
                     $stmt = $conn->prepare("CALL listar_materiais_ano_adm(?)");
-                    $stmt->bind_param("s", $ano);
+                    $stmt->bind_param("i", $ano);
                 } elseif ($pesquisa) {
                     $stmt = $conn->prepare("CALL listar_materiais_nome_adm(?)");
                     $pesquisa = "%$pesquisa%";
