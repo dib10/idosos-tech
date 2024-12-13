@@ -10,8 +10,13 @@
         die("Erro de conexão: " . $conn->connect_error);
     }
 
-    $ano = $_GET['ano']
-        
+    $ano = $_GET['ano'];
+
+    if(!$ano){
+        header("Location: ../index.php");
+        exit()        
+    }
+
     $stmt = $conn->prepare("CALL GetSemestre(?)");
     $stmt->bind_param("i", $ano);
     $stmt->execute();
@@ -20,13 +25,15 @@
     $primeiroSemestre = [];
     $segundoSemestre = [];
 
-    while($row -> $result->fetch_assoc()){
-        if($row['semestre'] == '1º semestre'){
+    while ($row = $result->fetch_assoc()) {
+        if ($row['semestre'] == '1º semestre') {
             $primeiroSemestre[] = $row;
-        } else if($row['semestre'] == '2º semestre'){
+        } else if ($row['semestre'] == '2º semestre') {
             $segundoSemestre[] = $row;
         }
     }
+    $stmt->close();
+    $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
