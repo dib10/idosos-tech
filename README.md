@@ -1,5 +1,8 @@
 # Idosos Tech 👵💻 
-**Idosos Tech** é um projeto voltado para inclusão digital, desenvolvido em colaboração com a professora Márcia no Projeto de Extensão **Simplifica**. A iniciativa promove o aprendizado de informática para idosos, ajudando a reduzir a exclusão digital e proporcionando um ambiente de ensino acessível e inclusivo.<br><br>
+**Idosos Tech** é um projeto voltado para inclusão digital, desenvolvido em colaboração com a professora Márcia no Projeto de Extensão **Simplifica**. A iniciativa promove o aprendizado de informática para idosos, ajudando a reduzir a exclusão digital e proporcionando um ambiente de ensino acessível e inclusivo.<br>
+
+Site: https://idosos-tech.simplifica.gru.br/index.php
+
 [![Simplifica Badge](https://imgur.com/pZcw9GP.png)](https://simplifica.gru.br/simplifica/#top)
 ## Referência
 
