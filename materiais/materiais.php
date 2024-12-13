@@ -1,3 +1,33 @@
+<?php       
+    $host = "localhost"; // Geralmente "localhost" em cPanel
+    $user = "simplifica_idosos-tech"; // Usuário do banco de dados
+    $password = "simplificaidosos"; // Senha do banco de dados
+    $dbname = "simplifica_idosos-tech"; // Nome do banco de dados
+    
+    $conn = new mysqli($host, $user, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Erro de conexão: " . $conn->connect_error);
+    }
+
+    $ano = $_GET['ano']
+        
+    $stmt = $conn->prepare("CALL GetSemestre(?)");
+    $stmt->bind_param("i", $ano);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    $primeiroSemestre = [];
+    $segundoSemestre = [];
+
+    while($row -> $result->fetch_assoc()){
+        if($row['semestre'] == '1º semestre'){
+            $primeiroSemestre[] = $row;
+        } else if($row['semestre'] == '2º semestre'){
+            $segundoSemestre[] = $row;
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -49,12 +79,11 @@
 
 <!-- Conteúdo -->
 <div class="content text-center text1 pt-5">
-    <h1>Materiais 2022</h1>
-    <p class="introduction">Essa seção dispõe de todos os materiais do ano letivo de 2022. Abaixo encontra-se os conteúdos separados por semestre.</p>
+    <h1>Materiais <?= $ano ?></h1>
+    <p class="introduction">Essa seção dispõe de todos os materiais do ano letivo de <?= $ano ?>. Abaixo encontra-se os conteúdos separados por semestre.</p>
     <div class="arrow" aria-hidden="true">&#8595;</div>
     <h3 class="desc">Desça a tela para acessar os conteúdos!</h3>
 </div><br>
-
 <!-- Cards -->
 <section id="semestres">
     <img src="../img/linha2.png" alt="Linha decorativa" class="linha">
@@ -62,15 +91,21 @@
     <img src="../img/linha2.png" alt="Linha decorativa" class="linha">
 </section>
 <br><br>
-<div class="container d-flex justify-content-center">
-    <div class="card w-25">
-        <img src="../img/drive.webp" class="card-img-top" alt="Ícone do Google Drive">
-        <div class="card-body">
-            <a href="../aulas/aulas.php" class="text-decoration-none">
-                <h2 class="text-white">Aula Google Drive</h2>
-            </a>
-        </div>
-    </div>
+<div class="container d-flex justify-content-center flex-wrap">
+    <?php if (!empty($primeiroSemestre)) { ?>
+        <?php foreach ($primeiroSemestre as $materia) { ?>
+            <div class="card w-25 m-2">
+                <img src="../img/drive.webp" class="card-img-top" alt="Ícone do Google Drive">
+                <div class="card-body">
+                    <a href="../aulas/aulas.php?arquivo=<?=$materia['arquivo'] ?>" class="text-decoration-none">
+                        <h2 class="text-white"><?= $materia['titulo_materia']?></h2>
+                    </a>
+                </div>
+            </div>
+        <?php } ?>
+    <?php } else { ?>
+        <p class="text-center text-danger">Não há matérias cadastradas para o 1º semestre.</p>
+    <?php } ?>
 </div>
 <br>
 
@@ -80,16 +115,23 @@
     <img src="../img/linha2.png" alt="Linha decorativa" class="linha">
 </section>
 <br><br>
-<div class="container d-flex justify-content-center">
-    <div class="card w-25">
-        <img src="../img/foto1.webp" class="card-img-top" alt="Imagem de um quebra-cabeça">
-        <div class="card-body">
-            <a href="../material.php" class="text-decoration-none">
-                <h2 class="text-white">Lorem ipsum dolor</h2>
-            </a>
-        </div>
-    </div>
+<div class="container d-flex justify-content-center flex-wrap">
+    <?php if (!empty($segundoSemestre)) { ?>
+        <?php foreach ($segundoSemestre as $materia) { ?>
+            <div class="card w-25 m-2">
+                <img src="../img/foto1.webp" class="card-img-top" alt="Imagem ilustrativa">
+                <div class="card-body">
+                    <a href="../material.php?arquivo=<?= $materia['arquivo'] ?>" class="text-decoration-none">
+                        <h2 class="text-white"><?= $materia['titulo_materia'] ?></h2>
+                    </a>
+                </div>
+            </div>
+        <?php } ?>
+    <?php } else { ?>
+        <p class="text-center text-danger">Não há matérias cadastradas para o 2º semestre.</p>
+    <?php } ?>
 </div>
+
 <!-- Cards -->
 
 <!-- Seta antes da seção de contatos -->
