@@ -39,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_modifiedby = 1;
 
     if ($stmt->execute()) {
-        echo "Material adicionado com sucesso!";
         header("Location: listarMaterial.php");
         exit();
     } else {
