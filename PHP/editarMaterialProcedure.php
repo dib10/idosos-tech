@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $stmt = $conn->prepare("CALL alterar_materiais_adm(?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("isisssss", $materiaid, $titulo, $ano, $semestre, $arquivo, $linkTarefa, $linkJogo, $linkVideo);
+    $stmt->bind_param("isssssss", $materiaid, $titulo, $ano, $semestre, $arquivo, $linkTarefa, $linkJogo, $linkVideo);
 
     if ($stmt->execute()) {
         header("Location: listarMaterial.php?success=1");
