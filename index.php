@@ -1,3 +1,20 @@
+<?php       
+    $host = "localhost"; // Geralmente "localhost" em cPanel
+    $user = "simplifica_idosos-tech"; // Usuário do banco de dados
+    $password = "simplificaidosos"; // Senha do banco de dados
+    $dbname = "simplifica_idosos-tech"; // Nome do banco de dados
+    
+    $conn = new mysqli($host, $user, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Erro de conexão: " . $conn->connect_error);
+    }
+
+    $stmt = $conn->prepare("CALL GetAnos()");
+    $stmt->execute();
+    $result = $stmt->get_result();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -65,7 +82,12 @@
 <section class="main_page materiais mx-2" id="materiais" aria-labelledby="titulo-materiais">
     <div class="content text-center">
         <h1 id="titulo-materiais">Materiais</h1>
-        <hr>
+        <?php while ($row = $result->fetch_assoc()) { ?>
+            <a href="PHP/listarMaterial.php?ano=<?=($row['ano']) ?>">
+                <h3>Materiais <?=($row['ano']) ?></h3>
+                <p>Clique aqui!</p>
+            </a>
+        <?php } ?>
         <div class="arrow" aria-hidden="true">&#8595;</div>
         <h3>Desça a tela para acessar os contatos!</h3>
     </div>
