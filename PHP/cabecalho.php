@@ -17,12 +17,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="../index.html">Início</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Materiais</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Contatos</a>
-                </li>
             </ul>
         </div>
     </div>
