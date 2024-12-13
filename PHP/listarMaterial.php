@@ -70,7 +70,7 @@
                 $pesquisa = $_GET['pesquisa'] ?? '';
 
                 if ($ano && $pesquisa) {
-                    $stmt = $conn->prepare("CALL listar_materiais_nome_adm(?, ?)");
+                    $stmt = $conn->prepare("CALL listar_materiais_nome_adm(?,?)");
                     $pesquisa = "%$pesquisa%";
                     $stmt->bind_param("ss", $pesquisa, $ano);
                 } elseif ($ano) {
