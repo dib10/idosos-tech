@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $materiaid = $_POST['materiaid'];
     $titulo = $_POST['titulo'];
-    $ano = $_POST['ano'];
+    $ano = (int) $_POST['ano'];
     $semestre = $_POST['semestre'];
     $arquivo = $_FILES['arquivo']['name'];
     $linkTarefa = $_POST['linkTarefa'] ?? null;
