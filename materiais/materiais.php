@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../index.html" title="Ir para a página inicial">Início</a> 
+                    <a class="nav-link text-white" href="../index.php" title="Ir para a página inicial">Início</a> 
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="materiais.html" title="Ir para a página de materiais">Materiais</a> 
