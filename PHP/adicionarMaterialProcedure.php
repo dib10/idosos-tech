@@ -19,8 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $linkJogo = $_POST['linkJogo'] ?? null;
     $linkVideo = $_POST['linkVideo'] ?? null;
 
-    $ano = date("Y-m-d", strtotime($ano));
-
     $uploadDir = '../arquivos/';
 
     if (!is_dir($uploadDir)) {
