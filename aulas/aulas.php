@@ -86,7 +86,7 @@
 <!-- Conteúdo -->
 <section class="content text-center pt-5" aria-labelledby="titulo-aula">
     <h1 id="titulo-aula">Aula: <?= $row['titulo_materia'] ?></h1>
-    <p class="introduction">Essa é uma sobre <?= $row['titulo_materia'] ?>.</p>
+    <p class="introduction">Essa é uma aula sobre <?= $row['titulo_materia'] ?>.</p>
     <div class="arrow mt-5" aria-hidden="true">&#8595;</div>
     <h3>Desça a tela para acessar os conteúdos!</h3>
 </section>
@@ -100,7 +100,7 @@
 
 <!-- Seção com botões -->
 <section class="additional-sections text-center mt-5" aria-labelledby="titulo-secoes">
-    <h1 id="titulo-secoes">Outras seções para ver!</h1>
+    <h1 id="titulo-secoes titulo-aula">Outras seções para ver!</h1>
     <br>
     <div class="row justify-content-center m-5">
         <div class="col-12 col-md-4 mb-4">
