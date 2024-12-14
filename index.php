@@ -1,13 +1,12 @@
 <?php       
-    $host = "localhost"; // Geralmente "localhost" em cPanel
-    $user = "simplifica_idosos-tech"; // Usuário do banco de dados
-    $password = "simplificaidosos"; // Senha do banco de dados
-    $dbname = "simplifica_idosos-tech"; // Nome do banco de dados
-    
-    $conn = new mysqli($host, $user, $password, $dbname);
+    require_once "database.php";
 
-    if ($conn->connect_error) {
-        die("Erro de conexão: " . $conn->connect_error);
+        //caso tentarem entrar em alguma página sem login
+    if(isset($_GET['erro'])){
+        echo "<script>";
+        echo "const erro = 'Acesso restrito para funcionarios!';";
+        echo "alert(erro)";
+        echo "</script>";
     }
 
     $stmt = $conn->prepare("CALL GetAnos()");
