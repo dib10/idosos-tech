@@ -136,7 +136,7 @@
             <div class="card w-25 m-2">
                 <img src="../img/foto1.webp" class="card-img-top img-fluid" alt="Imagem ilustrativa">
                 <div class="card-body">
-                    <a class="img-fluid" href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
+                    <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
                         <h2 class="text-white"><?= $materia['titulo_materia'] ?></h2>
                     </a>
                     <p class="text-center text-white">Clique aqui!</p>
