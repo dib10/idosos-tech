@@ -108,7 +108,7 @@
 <div class="container d-flex justify-content-center flex-wrap">
     <?php if (!empty($primeiroSemestre)) { ?>
         <?php foreach ($primeiroSemestre as $materia) { ?>
-            <div class="card">
+            <div class="card w-25 m-2">
                 <img src="../img/drive.webp" class="card-img-top" alt="Ícone do Google Drive">
                 <div class="card-body">
                     <a href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
