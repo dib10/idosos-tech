@@ -92,7 +92,7 @@
 </section>
 
 <!-- Título do Documento e PDF Embutido -->
-<section class="document-container text-center mt-5" aria-labelledby="titulo-documento">
+<section class="document-container text-center" aria-labelledby="titulo-documento">
     <h2 id="titulo-documento" class="titulo-documento"><?= $row['titulo_materia'] ?></h2>
     <embed src="../arquivos/<?= $row['arquivo'] ?>" type="application/pdf" width="75%" height="600px" title="Arquivo <?= $row['arquivo'] ?>"></embed>
 </section>
