@@ -1,3 +1,42 @@
+<?php       
+    $host = "localhost"; // Geralmente "localhost" em cPanel
+    $user = "simplifica_idosos-tech"; // Usuário do banco de dados
+    $password = "simplificaidosos"; // Senha do banco de dados
+    $dbname = "simplifica_idosos-tech"; // Nome do banco de dados
+    
+    $conn = new mysqli($host, $user, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Erro de conexão: " . $conn->connect_error);
+    }
+
+    if (!isset($_GET['materiaid']) || !is_numeric($_GET['materiaid'])) {
+        header("Location: ../index.php");
+        exit();
+    }
+
+    $material_id = intval($_GET['materiaid']);
+
+    $stmt = $conn->prepare("CALL listar_material_id(?)");
+    
+    $stmt->bind_param("i", $material_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    $primeiroSemestre = [];
+    $segundoSemestre = [];
+
+    if (!($result->num_rows) > 0) {
+        header("Location: ../index.php");
+        exit();
+    } 
+
+    $row = $result->fetch_assoc();
+
+    $stmt->close();
+    $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -49,16 +88,16 @@
 
 <!-- Conteúdo -->
 <section class="content text-center pt-5" aria-labelledby="titulo-aula">
-    <h1 id="titulo-aula">Aula: Google Drive</h1>
-    <p class="introduction">Nessa aula foi discutido lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h1 id="titulo-aula">Aula: <?= $row['titulo_materia'] ?></h1>
+    <p class="introduction">Essa é uma sobre <?= $row['titulo_materia'] ?>.</p>
     <div class="arrow mt-5" aria-hidden="true">&#8595;</div>
     <h3>Desça a tela para acessar os conteúdos!</h3>
 </section>
 
 <!-- Título do Documento e PDF Embutido -->
 <section class="document-container text-center mt-5" aria-labelledby="titulo-documento">
-    <h2 id="titulo-documento" class="titulo-documento">Google Drive</h2>
-    <embed src="../arquivos/LIVRO DE RECEITAS.pdf" type="application/pdf" width="75%" height="600px" title="PDF com o material da aula Google Drive"></embed>
+    <h2 id="titulo-documento" class="titulo-documento"><?= $row['titulo_materia'] ?></h2>
+    <embed src="../arquivos/<?= $row['arquivo'] ?>" type="application/pdf" width="75%" height="600px" title="Arquivo <?= $row['arquivo'] ?>"></embed>
 </section>
 <br>
 
