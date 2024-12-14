@@ -112,7 +112,7 @@
                 <img src="../img/foto1.webp" class="card-img-top" alt="Ícone do Google Drive">
                 <div class="card-body">
                     <a href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
-                        <h2 class="text-white"><?= $materia['titulo_materia']?></h2>
+                        <h2 class="text-center text-white"><?= $materia['titulo_materia']?></h2>
                     </a>
                     <p class="text-center text-white">Clique aqui!</p>
                 </div>
@@ -137,7 +137,7 @@
                 <img src="../img/foto1.webp" class="card-img-top" alt="Imagem ilustrativa">
                 <div class="card-body">
                     <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
-                        <h2 class="text-white"><?= $materia['titulo_materia'] ?></h2>
+                        <h2 class="text-center text-white"><?= $materia['titulo_materia'] ?></h2>
                     </a>
                     <p class="text-center text-white">Clique aqui!</p>
                 </div>
