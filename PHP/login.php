@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,6 +23,12 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="text-center mb-4">Login</h2>
+            <?php
+                 if (isset($_SESSION['login_error'])) {
+                echo '<div class="alert alert-danger" role="alert">' . $_SESSION['login_error'] . '</div>';
+                unset($_SESSION['login_error']);
+                }
+            ?>
             <form action="processar_Login.php" method="POST">
                 <div class="mb-3 position-relative">
                     <label for="email" class="form-label">Email</label>
