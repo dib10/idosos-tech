@@ -26,13 +26,22 @@
     $primeiroSemestre = [];
     $segundoSemestre = [];
 
-    while ($row = $result->fetch_assoc()) {
-        if ($row['semestre'] == '1º semestre') {
-            $primeiroSemestre[] = $row;
-        } else if ($row['semestre'] == '2º semestre') {
-            $segundoSemestre[] = $row;
+    // Verifique o que está sendo retornado
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            var_dump($row); // Exibe a estrutura dos dados
+            if ($row['semestre'] == '1º semestre') {
+                $primeiroSemestre[] = $row;
+            } else if ($row['semestre'] == '2º semestre') {
+                $segundoSemestre[] = $row;
+            }
         }
+    } else {
+        echo "Nenhum resultado encontrado.";
     }
+
+$stmt->close();
+$conn->close();
 
     $stmt->close();
     $conn->close();
