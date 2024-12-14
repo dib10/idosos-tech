@@ -101,7 +101,7 @@
 <!-- Seção com botões -->
 <section class="additional-sections text-center" aria-labelledby="titulo-secoes">
     <?php if (!empty($row['link_tarefa']) || !empty($row['link_jogo']) || !empty($row['link_video'])): ?>
-    <h1 id="titulo-aula">Outras seções para ver!</h1>
+    <h1 class="mt-5" id="titulo-aula">Outras seções para ver!</h1>
     <?php endif; ?>
     <br>
     <div class="row justify-content-center m-5">
