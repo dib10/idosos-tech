@@ -32,6 +32,7 @@
                 <label for="ano" class="form-label">Ano:</label>
                 <select id="ano" name="ano" class="form-select" required>
                     <option value="">Selecione o ano</option>
+                    <option value="2025">2025</option>
                     <option value="2024">2024</option>
                     <option value="2023">2023</option>
                     <option value="2022">2022</option>
