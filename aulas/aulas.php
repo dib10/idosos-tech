@@ -119,7 +119,7 @@
         </div>
         <?php endif; ?>
 
-        <?php if (!empty($row['link_aula'])): ?>
+        <?php if (!empty($row['link_video'])): ?>
         <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
                 <a href="<?= $row['link_video']?>" class="text-decoration-none">
