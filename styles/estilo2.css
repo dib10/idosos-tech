@@ -406,7 +406,7 @@ button:hover, .adm-button:hover {
 h1 {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(177, 14, 14)
+    color: white;
     text-align: center;
     margin: 0;
     padding: 20px 0;
@@ -419,6 +419,13 @@ h1 {
     pading: 0;
 }
 
+.titulo-aula
+{
+    color: #0A1E6E;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
 
 
