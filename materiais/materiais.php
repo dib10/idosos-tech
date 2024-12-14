@@ -130,7 +130,7 @@
     <img src="../img/linha2.png" alt="Linha decorativa" class="linha">
 </section>
 <br><br>
-<div class="container d-flex justify-content-center flex-wrap">
+<div class="d-flex justify-content-center flex-wrap">
     <?php if (!empty($segundoSemestre)) { ?>
         <?php foreach ($segundoSemestre as $materia) { ?>
             <div class="card w-25 m-2">
@@ -139,7 +139,7 @@
                     <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
                         <h2 class="text-white"><?= $materia['titulo_materia'] ?></h2>
                     </a>
-                    <p class="text-white">Clique aqui!</p>
+                    <p class="text-center text-white">Clique aqui!</p>
                 </div>
             </div>
         <?php } ?>
