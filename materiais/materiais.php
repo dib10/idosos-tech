@@ -111,7 +111,7 @@
             <div class="card w-25 m-2">
                 <img src="../img/drive.webp" class="card-img-top" alt="Ícone do Google Drive">
                 <div class="card-body">
-                    <a href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
+                    <a class="img-fluid" href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
                         <h2 class="text-white"><?= $materia['titulo_materia']?></h2>
                     </a>
                     <p class="text-center text-white">Clique aqui!</p>
@@ -119,7 +119,7 @@
             </div>
         <?php } ?>
     <?php } else { ?>
-        <p class="text-center desc">Não há matérias cadastradas para o 1º semestre.</p>
+        <p class="text-center desc">Não há materiais cadastradas para o 1º semestre.</p>
     <?php } ?>
 </div>
 <br>
@@ -136,7 +136,7 @@
             <div class="card w-25 m-2">
                 <img src="../img/foto1.webp" class="card-img-top" alt="Imagem ilustrativa">
                 <div class="card-body">
-                    <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
+                    <a class="img-fluid" href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
                         <h2 class="text-white"><?= $materia['titulo_materia'] ?></h2>
                     </a>
                     <p class="text-center text-white">Clique aqui!</p>
@@ -144,7 +144,7 @@
             </div>
         <?php } ?>
     <?php } else { ?>
-        <p class="text-center desc">Não há matérias cadastradas para o 2º semestre.</p>
+        <p class="text-center desc">Não há materiais cadastradas para o 2º semestre.</p>
     <?php } ?>
 </div>
 
