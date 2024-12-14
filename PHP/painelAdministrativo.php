@@ -1,16 +1,16 @@
 <?php
-    $tituloPagina = "Painel Administrativo"; 
-    require_once 'cabecalho.php';
     require_once "database.php";
-    
     session_start();
 
-    if(!(isset($_SESSION['Adm']))){
+    if (!(isset($_SESSION['Adm']))) {
         header("Location: ../index.php?erro=true");
         exit;
     }
 
+    $tituloPagina = "Painel Administrativo"; 
+    require_once 'cabecalho.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

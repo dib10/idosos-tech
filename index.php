@@ -4,7 +4,7 @@
         //caso tentarem entrar em alguma página sem login
     if(isset($_GET['erro'])){
         echo "<script>";
-        echo "const erro = 'Acesso restrito para funcionarios!';";
+        echo "const erro = 'Acesso restrito para administradores!';";
         echo "alert(erro)";
         echo "</script>";
     }
