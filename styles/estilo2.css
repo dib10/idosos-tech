@@ -317,6 +317,7 @@ footer {
 
 .card-body {
     color: #fff; 
+    pading: 0;
 }
 
 .contato-title {
