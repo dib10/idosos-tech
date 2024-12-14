@@ -1,31 +1,27 @@
 <?php
-$host = "localhost"; // Geralmente "localhost" em cPanel
-$user = "simplifica_idosos-tech"; // Usuário do banco de dados
-$password = "simplificaidosos"; // Senha do banco de dados
-$dbname = "simplifica_idosos-tech"; // Nome do banco de dados
+    require_once "database.php";
+    session_start();
 
-$conn = new mysqli($host, $user, $password, $dbname);
+    if(!(isset($_SESSION['Adm']))){
+        header("Location: Index.php?erro=true");
+        exit;
+    }
+    if (!isset($_GET['id'])) {
+        die("ID do material não fornecido.");
+    }
 
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
+    $materiaid = $_GET['id'];
 
-if (!isset($_GET['id'])) {
-    die("ID do material não fornecido.");
-}
+    $stmt = $conn->prepare("CALL excluir_materiais_adm(?)");
+    $stmt->bind_param("i", $materiaid);
 
-$materiaid = $_GET['id'];
+    if ($stmt->execute()) {
+        header("Location: listarMaterial.php?success=1");
+        exit();
+    } else {
+        echo "Erro ao remover material: " . $stmt->error;
+    }
 
-$stmt = $conn->prepare("CALL excluir_materiais_adm(?)");
-$stmt->bind_param("i", $materiaid);
-
-if ($stmt->execute()) {
-    header("Location: listarMaterial.php?success=1");
-    exit();
-} else {
-    echo "Erro ao remover material: " . $stmt->error;
-}
-
-$stmt->close();
-$conn->close();
+    $stmt->close();
+    $conn->close();
 ?>

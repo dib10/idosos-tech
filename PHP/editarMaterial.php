@@ -1,32 +1,31 @@
 <?php
-$host = "localhost"; // Geralmente "localhost" em cPanel
-$user = "simplifica_idosos-tech"; // Usuário do banco de dados
-$password = "simplificaidosos"; // Senha do banco de dados
-$dbname = "simplifica_idosos-tech"; // Nome do banco de dados
+    require_once "database.php";
 
-$conn = new mysqli($host, $user, $password, $dbname);
+    session_start();
 
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
+    if(!(isset($_SESSION['Adm']))){
+        header("Location: Index.php?erro=true");
+        exit;
+    }
 
-$materiaid = $_GET['id'] ?? null;
-if (!$materiaid) {
-    die("ID do material não fornecido.");
-}
 
-$stmt = $conn->prepare("SELECT * FROM tb_materiais WHERE materiaid = ?");
-$stmt->bind_param("i", $materiaid);
-$stmt->execute();
-$result = $stmt->get_result();
-$material = $result->fetch_assoc();
-$stmt->close();
+    $materiaid = $_GET['id'] ?? null;
+    if (!$materiaid) {
+        die("ID do material não fornecido.");
+    }
 
-if (!$material) {
-    die("Material não encontrado.");
-}
+    $stmt = $conn->prepare("SELECT * FROM tb_materiais WHERE materiaid = ?");
+    $stmt->bind_param("i", $materiaid);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $material = $result->fetch_assoc();
+    $stmt->close();
 
-$conn->close();
+    if (!$material) {
+        die("Material não encontrado.");
+    }
+
+    $conn->close();
 ?>
 
 <!DOCTYPE html>

@@ -1,16 +1,7 @@
 <?php
 
-$host = "localhost"; // Geralmente "localhost" em cPanel
-$user = "simplifica_idosos-tech"; // Usuário do banco de dados
-$password = "simplificaidosos"; // Senha do banco de dados
-$dbname = "simplifica_idosos-tech"; // Nome do banco de dados
-
-$conn = new mysqli($host, $user, $password, $dbname);
+require_once "database.php";
 session_start();
-
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
@@ -28,6 +19,7 @@ if ($conn->connect_error) {
             $user = $result->fetch_assoc();
             
             if ($senha == $user['senha']) {
+                $_SESSION['Adm'] = $result;
                 header("Location: painelAdministrativo.php");
                 exit();
             } else {
