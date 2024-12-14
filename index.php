@@ -1,5 +1,5 @@
 <?php       
-    require_once "database.php";
+    require_once "PHP/database.php";
 
         //caso tentarem entrar em alguma página sem login
     if(isset($_GET['erro'])){

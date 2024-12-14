@@ -4,7 +4,7 @@
 
     if(!(isset($_SESSION['Adm']))){
         header("Location: ../index.php?erro=true");
-    exit;
+        exit;
     }
 ?>
 
