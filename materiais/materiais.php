@@ -108,7 +108,7 @@
 <div class="d-flex justify-content-center flex-wrap">
     <?php if (!empty($primeiroSemestre)) { ?>
         <?php foreach ($primeiroSemestre as $materia) { ?>
-            <div class="card w-25 h-25 ms-2">
+            <div class="card w-25 h-25 ms-4">
                 <img src="../img/foto1.webp" class="card-img-top" alt="Ícone do Google Drive">
                 <div class="card-body">
                     <a href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
@@ -133,7 +133,7 @@
 <div class="d-flex justify-content-center flex-wrap">
     <?php if (!empty($segundoSemestre)) { ?>
         <?php foreach ($segundoSemestre as $materia) { ?>
-            <div class="card w-25 h-25 ms-2">
+            <div class="card w-25 h-25 ms-4">
                 <img src="../img/foto1.webp" class="card-img-top" alt="Imagem ilustrativa">
                 <div class="card-body">
                     <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
