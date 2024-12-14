@@ -62,10 +62,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../index.html" title="Ir para a página inicial">Início</a>
+                    <a class="nav-link text-white" href="../index.php" title="Ir para a página inicial">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="../materiais/materiais.html" title="Ir para a página de materiais">Materiais</a>
+                    <a class="nav-link text-white" href="../materiais/materiais.php" title="Ir para a página de materiais">Materiais</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#contatos" title="Ir para a seção de contatos">Contatos</a>
