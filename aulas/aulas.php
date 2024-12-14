@@ -86,7 +86,7 @@
 <!-- Conteúdo -->
 <section class="content text-center pt-5" aria-labelledby="titulo-aula">
     <h1 id="titulo-aula">Aula: <?= $row['titulo_materia'] ?></h1>
-    <p class="introduction">Essa é uma aula sobre <?= $row['titulo_materia'] ?>.</p>
+    <p class="introduction">Aproveite a <?= $row['titulo_materia'] ?>!.</p>
     <div class="arrow mt-5" aria-hidden="true">&#8595;</div>
     <h3>Desça a tela para acessar os conteúdos!</h3>
 </section>
