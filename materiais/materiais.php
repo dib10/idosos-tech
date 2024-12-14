@@ -26,9 +26,8 @@
     $primeiroSemestre = [];
     $segundoSemestre = [];
 
-    // Verifique o que está sendo retornado
     if ($result->num_rows > 0) {
-        var_dump($row); // Exibe a estrutura dos dados
+        var_dump($row); 
         while ($row = $result->fetch_assoc()) {
             if ($row['semestre'] == '1º semestre') {
                 $primeiroSemestre[] = $row;
