@@ -103,9 +103,10 @@
     <h1 id="titulo-aula">Outras seções para ver!</h1>
     <br>
     <div class="row justify-content-center m-5">
+        <?php if (!empty($row['link_tarefa'])): ?>
         <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
-                <a href="tarefas.html" class="text-decoration-none">
+                <a href="<?= $row['link_tarefa']" class="text-decoration-none">
                     <img src="../img/tarefa.png" alt="Ícone de tarefas da aula" class="button-image card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Tarefas da aula</h5>
@@ -114,9 +115,12 @@
                 </a>
             </div>
         </div>
+        <?php endif; ?>
+
+        <?php if (!empty($row['link_aula'])): ?>
         <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
-                <a href="gravacao.html" class="text-decoration-none">
+                <a href="<?= $row['link_video']" class="text-decoration-none">
                     <img src="../img/gravacao-de-video.png" alt="Ícone de gravação de aula" class="button-image card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Gravação da aula</h5>
@@ -125,9 +129,12 @@
                 </a>
             </div>
         </div>
+        <?php endif; ?>
+
+        <?php if (!empty($row['link_jogo'])): ?>
         <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
-                <a href="gravacao.html" class="text-decoration-none">
+                <a href="<?= $row['link_jogo']" class="text-decoration-none">
                     <img src="../img/jogo.png" alt="Ícone de jogo da aula" class="button-image card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Jogo da aula</h5>
@@ -136,17 +143,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-12 col-md-4 mb-4">
-            <div class="card h-100">
-                <a href="gravacao.html" class="text-decoration-none">
-                    <img src="../img/video.png" alt="Ícone de vídeo da aula" class="button-image card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Vídeo da aula</h5>
-                        <p class="card-text">Clique aqui!</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <?php endif; ?>
     </div>
 </section>
 
