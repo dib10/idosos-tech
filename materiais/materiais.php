@@ -27,9 +27,9 @@
     $segundoSemestre = [];
 
     while ($row = $result->fetch_assoc()) {
-        if ($row['semestre'] == '1Â° semestre') {
+        if ($row['semestre'] == '1º semestre') {
             $primeiroSemestre[] = $row;
-        } else if ($row['semestre'] == '2Â° semestre') {
+        } else if ($row['semestre'] == '2º semestre') {
             $segundoSemestre[] = $row;
         }
     }
