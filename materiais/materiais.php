@@ -28,7 +28,6 @@
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            var_dump($row);
             if ($row['semestre'] == "1° semestre") {
                 $primeiroSemestre[] = $row;
             } else if ($row['semestre'] == "2° semestre") {
@@ -108,7 +107,7 @@
 <div class="d-flex justify-content-center flex-wrap">
     <?php if (!empty($primeiroSemestre)) { ?>
         <?php foreach ($primeiroSemestre as $materia) { ?>
-            <div class="card w-25 h-25 ms-4">
+            <div class="card w-25 h-25 m-3">
                 <img src="../img/foto1.webp" class="card-img-top" alt="Ícone do Google Drive">
                 <div class="card-body">
                     <a href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
@@ -133,7 +132,7 @@
 <div class="d-flex justify-content-center flex-wrap">
     <?php if (!empty($segundoSemestre)) { ?>
         <?php foreach ($segundoSemestre as $materia) { ?>
-            <div class="card w-25 h-25 ms-4">
+            <div class="card w-25 h-25 m-3">
                 <img src="../img/foto1.webp" class="card-img-top" alt="Imagem ilustrativa">
                 <div class="card-body">
                     <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
