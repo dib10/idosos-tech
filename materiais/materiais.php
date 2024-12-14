@@ -28,6 +28,7 @@
 
     // Verifique o que está sendo retornado
     if ($result->num_rows > 0) {
+        var_dump($row); // Exibe a estrutura dos dados
         while ($row = $result->fetch_assoc()) {
             if ($row['semestre'] == '1º semestre') {
                 $primeiroSemestre[] = $row;
@@ -38,9 +39,6 @@
     } else {
         echo "Nenhum resultado encontrado.";
     }
-
-$stmt->close();
-$conn->close();
 
     $stmt->close();
     $conn->close();
