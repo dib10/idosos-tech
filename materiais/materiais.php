@@ -114,7 +114,7 @@
                     <a href="../aulas/aulas.php?materiaid=<?=$materia['materiaid'] ?>" class="text-decoration-none">
                         <h2 class="text-center text-white"><?= $materia['titulo_materia']?></h2>
                     </a>
-                    <p class="text-center text-white">Clique aqui!</p>
+                    <p class="text-center text-white m-0">Clique aqui!</p>
                 </div>
             </div>
         <?php } ?>
@@ -139,7 +139,7 @@
                     <a href="../material.php?materiaid=<?= $materia['materiaid'] ?>" class="text-decoration-none">
                         <h2 class="text-center text-white"><?= $materia['titulo_materia'] ?></h2>
                     </a>
-                    <p class="text-center text-white">Clique aqui!</p>
+                    <p class="text-center text-white m-0">Clique aqui!</p>
                 </div>
             </div>
         <?php } ?>
