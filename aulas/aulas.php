@@ -23,9 +23,6 @@
     $stmt->execute();
     $result = $stmt->get_result();
 
-    $primeiroSemestre = [];
-    $segundoSemestre = [];
-
     if (!($result->num_rows) > 0) {
         header("Location: ../index.php");
         exit();
@@ -42,7 +39,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula: Google Drive</title>
+    <title>Aula: <?= $row['titulo_materia'] ?></title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
