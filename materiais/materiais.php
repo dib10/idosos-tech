@@ -105,7 +105,7 @@
     <img src="../img/linha2.png" alt="Linha decorativa" class="linha">
 </section>
 <br><br>
-<div class="container d-flex justify-content-center flex-wrap">
+<div class="d-flex justify-content-center flex-wrap">
     <?php if (!empty($primeiroSemestre)) { ?>
         <?php foreach ($primeiroSemestre as $materia) { ?>
             <div class="card w-25 m-2">
